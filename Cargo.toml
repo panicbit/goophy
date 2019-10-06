@@ -1,0 +1,19 @@
+[package]
+name = "goophy"
+version = "0.1.0"
+authors = ["panicbit <panicbit.dev@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-std = { version = "0.99.7", git = "https://github.com/async-rs/async-std" }
+failure = "0.1.5"
+futures-preview = "0.3.0-alpha.18"
+# cursive = { version = "0.13.0", features = ["termion-backend"] }
+
+[dependencies.cursive]
+version = "0.13.1-alpha.0"
+features = ["termion-backend"]
+git = "https://github.com/gyscos/cursive"
+rev = "d6f5c0e0"
